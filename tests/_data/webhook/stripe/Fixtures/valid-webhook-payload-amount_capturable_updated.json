@@ -1,0 +1,15 @@
+{
+    "id": "123456789",
+    "object": "event",
+    "api_version": "2023-10-16",
+    "created": 1680064028,
+    "type": "payment_intent.amount_capturable_updated",
+    "data": {
+        "object": {
+            "id": "123456789",
+            "object": "payment_intent",
+            "amount": 45877,
+            "status": "requires_capture"
+        }
+    }
+}

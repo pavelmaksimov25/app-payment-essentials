@@ -1,0 +1,34 @@
+namespace: SprykerProjectTest\Zed\Payment
+
+paths:
+    tests: .
+    data: ../../../_data
+    support: _support
+    output: ../../../_output
+
+coverage:
+    enabled: true
+    remote: false
+    show_uncovered: true
+    whitelist: { include: ['../../../../src/SprykerProject/*/Payment/*'] }
+
+suites:
+    Communication:
+        path: Communication
+        actor: PaymentCommunicationTester
+        modules:
+            enabled:
+                - \SprykerProjectTest\Zed\Testify\Helper\BootstrapHelper
+                - \SprykerTest\Shared\Testify\Helper\ConfigHelper
+                - \SprykerTest\Zed\Testify\Helper\Business\BusinessHelper
+                - \SprykerTest\Shared\Testify\Helper\Environment
+                - \SprykerTest\Shared\Testify\Helper\DependencyHelper
+                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \SprykerProjectTest\Shared\Payment\Helper\PaymentHelper
+                - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
+                - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper
+                - \SprykerTest\Shared\Propel\Helper\TransactionHelper
+
+    Persistence:
+        path: Persistence
+        actor: PaymentPersistenceTester

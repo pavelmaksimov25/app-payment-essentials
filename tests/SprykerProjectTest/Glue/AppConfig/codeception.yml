@@ -1,0 +1,41 @@
+namespace: SprykerProjectTest\Glue\AppConfig
+
+paths:
+    tests: .
+    data: ../../../_data
+    support: _support
+    output: ../../../_output
+
+coverage:
+    enabled: true
+    remote: false
+    show_uncovered: true
+    whitelist:
+        include:
+            - '../../../../src/SprykerProject/*/AppKernel/*'
+            - '../../../../src/SprykerProject/*/Payment/*'
+            - '../../../../src/SprykerProject/*/PaymentBackendApi/*'
+
+suites:
+    Glue:
+        path: /
+        actor: AppConfigTester
+        modules:
+            enabled:
+                - \SprykerProjectTest\Glue\PaymentBackendApi\Helper\PaymentBackendApiHelper
+                - \SprykerTest\Shared\Testify\Helper\Environment
+                -
+                    \SprykerTest\Shared\Testify\Helper\LocatorHelper:
+                        projectNamespaces:
+                            - SprykerProject
+                - \SprykerTest\Shared\Propel\Helper\ConnectionHelper
+                - \SprykerTest\Shared\Testify\Helper\ConfigHelper
+                - \SprykerTest\Glue\Testify\Helper\DependencyProviderHelper
+                - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
+                - \SprykerTest\Shared\Testify\Helper\DependencyHelper
+                - \SprykerProjectTest\Glue\Testify\Helper\GlueBackendApiHelper
+                - \SprykerTest\Glue\Testify\Helper\JsonPath
+                - \SprykerTest\Zed\Testify\Helper\Business\BusinessHelper
+                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
+                - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper

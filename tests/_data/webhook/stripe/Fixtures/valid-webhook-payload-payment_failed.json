@@ -1,0 +1,14 @@
+{
+    "id": "123456789",
+    "object": "event",
+    "api_version": "2023-10-16",
+    "created": 1680064028,
+    "type": "payment_intent.payment_failed",
+    "data": {
+        "object": {
+            "id": "123456789",
+            "object": "payment_intent",
+            "amount": 45877
+        }
+    }
+}

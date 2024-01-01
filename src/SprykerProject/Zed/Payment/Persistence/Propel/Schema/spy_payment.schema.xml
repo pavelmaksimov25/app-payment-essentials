@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="zed" xsi:noNamespaceSchemaLocation="http://static.spryker.com/schema-01.xsd" namespace="Orm\Zed\Payment\Persistence" package="src.Orm.Zed.Payment.Persistence">
+    <table name="spy_payment" idMethod="native" class="SpyPayment">
+        <column name="id_payment" type="INTEGER" required="true" autoIncrement="true" primaryKey="true"/>
+        <column name="order_reference" type="CHAR" size="36"/>
+        <column name="transaction_id" type="CHAR" size="36"/>
+        <column name="tenant_identifier" type="CHAR" size="60"/>
+        <column name="quote" type="LONGVARCHAR"/>
+        <column name="status" type="CHAR" size="64"/>
+        <column name="redirect_success_url" type="LONGVARCHAR"/>
+        <column name="redirect_cancel_url" type="LONGVARCHAR"/>
+        <column name="checkout_summary_page_url" type="LONGVARCHAR"/>
+
+        <unique name="spy_payment-unique-order_reference">
+            <unique-column name="order_reference"/>
+        </unique>
+
+        <behavior name="timestampable">
+            <parameter name="create_column" value="created_at"/>
+            <parameter name="update_column" value="updated_at"/>
+        </behavior>
+
+    </table>
+</database>

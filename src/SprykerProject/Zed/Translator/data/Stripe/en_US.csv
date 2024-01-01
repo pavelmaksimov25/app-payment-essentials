@@ -1,0 +1,6 @@
+stripe.account_id.not_connected_to_the_platform_account,Stripe account is not connected to the platform account
+stripe.configuration.error.account_id.is_required,Stripe AccountID is required
+stripe.configuration.error.account_id.format,The Stripe account ID must start with "acct_"
+stripe.mode.error.mode.is_required,Selecting an environment is required
+stripe.mode.error.mode.format,Invalid environment
+stripe.configuration.error.page_label.length,Page Label is too long

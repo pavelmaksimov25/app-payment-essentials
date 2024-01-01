@@ -1,0 +1,46 @@
+namespace: SprykerProjectTest\AsyncApi\Payment
+
+paths:
+    tests: .
+    data: ../../../_data
+    support: _support
+    output: ../../../_output
+
+coverage:
+    enabled: true
+    remote: false
+    show_uncovered: true
+    whitelist:
+        include:
+            - '../../../../src/SprykerProject/*/Payment/*'
+
+suites:
+    AsyncApi:
+        path: PaymentTests
+        actor: PaymentAsyncApiTester
+        modules:
+            enabled:
+                - Asserts
+                - \SprykerProjectTest\AsyncApi\Payment\Helper\PaymentHelper
+                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \SprykerTest\Shared\Testify\Helper\Environment
+                - \SprykerTest\Shared\Testify\Helper\ConfigHelper
+                -
+                    \SprykerTest\Shared\Testify\Helper\LocatorHelper:
+                        projectNamespaces:
+                            - SprykerProject
+                - \SprykerTest\Shared\Testify\Helper\DependencyHelper
+                - \SprykerTest\Shared\Propel\Helper\TransactionHelper
+                - \SprykerTest\Service\Container\Helper\ContainerHelper
+                - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
+                - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper
+                - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
+                -
+                    \Spryker\Zed\TestifyAsyncApi\Business\Codeception\Helper\AsyncApiHelper:
+                        asyncapi: resources/api/asyncapi.yml
+                        handlers:
+                            - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationRequestedMessageHandlerPlugin
+                            - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationRequestedMessageHandlerPlugin
+                            - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundRequestedMessageHandlerPlugin
+                - \SprykerProjectTest\Shared\Payment\Helper\PaymentHelper
+                - \SprykerProjectTest\Shared\Payment\Helper\PaymentAssertionHelper
