@@ -65,7 +65,8 @@
         "psr-4": {
             "Generated\\": "src/Generated/",
             "Orm\\": "src/Orm/",
-            "SprykerProject\\": "src/SprykerProject/"
+            "SprykerProject\\": "src/SprykerProject/",
+            "SprykerProjectTest\\": "tests/SprykerProjectTest/"
         }
     },
     "autoload-dev": {
