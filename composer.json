@@ -66,14 +66,19 @@
             "Generated\\": "src/Generated/",
             "Orm\\": "src/Orm/",
             "SprykerProject\\": "src/SprykerProject/",
-            "SprykerProjectTest\\": "tests/SprykerProjectTest/"
+            "SprykerProjectTest\\AsyncApi\\Payment\\Helper\\": "tests/SprykerProjectTest/AsyncApi/Payment/_support/Helper/",
+            "SprykerProjectTest\\Glue\\AppConfig\\Helper\\": "tests/SprykerProjectTest/Glue/AppConfig/_support/Helper/",
+            "SprykerProjectTest\\Glue\\PaymentBackendApi\\Helper\\": "tests/SprykerProjectTest/Glue/PaymentBackendApi/_support/Helper/",
+            "SprykerProjectTest\\Glue\\Testify\\Helper\\": "tests/SprykerProjectTest/Glue/Testify/_support/Helper/",
+            "SprykerProjectTest\\Shared\\AppConfig\\Helper\\": "tests/SprykerProjectTest/Shared/AppConfig/_support/Helper/",
+            "SprykerProjectTest\\Shared\\Payment\\Helper\\": "tests/SprykerProjectTest/Shared/Payment/_support/Helper/",
+            "SprykerProjectTest\\Shared\\Testify\\Helper\\": "tests/SprykerProjectTest/Shared/Testify/_support/Helper/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "SprykerProjectTest\\": [
-                "tests/SprykerProjectTest/",
-                "tests/_support"
+                "tests/SprykerProjectTest/"
             ]
         }
     },

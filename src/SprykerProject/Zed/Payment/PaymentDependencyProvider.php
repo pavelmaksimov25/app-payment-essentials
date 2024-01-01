@@ -8,7 +8,6 @@
 namespace SprykerProject\Zed\Payment;
 
 use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
-use SprykerProject\Zed\Stripe\Communication\Plugin\Payment\StripePlatformPlugin;
 use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 
@@ -41,12 +40,10 @@ class PaymentDependencyProvider extends AbstractBundleDependencyProvider
     }
 
     /**
-     * This Plugin will be tested with the Platform tests of Stripe
-     *
      * @codeCoverageIgnore
      */
     private function getPlatformPlugin(): PlatformPluginInterface
     {
-        return new StripePlatformPlugin();
+        throw new \Exception('You need to implement a PlatformPluginInterface');
     }
 }

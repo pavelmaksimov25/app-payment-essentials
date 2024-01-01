@@ -8,7 +8,6 @@
 namespace SprykerProject\Glue\PaymentBackendApi;
 
 use SprykerProject\Glue\PaymentBackendApi\Plugin\PaymentBackendApi\GlueRequestWebhookMapperPluginInterface;
-use SprykerProject\Zed\Stripe\Communication\Plugin\Webhook\GlueRequestWebhookMapperPlugin;
 use Spryker\Glue\Kernel\Backend\AbstractBundleDependencyProvider;
 use Spryker\Glue\Kernel\Backend\Container;
 
@@ -56,6 +55,6 @@ class PaymentBackendApiDependencyProvider extends AbstractBundleDependencyProvid
 
     protected function getGlueRequestWebhookMapperPlugin(): ?GlueRequestWebhookMapperPluginInterface
     {
-        return new GlueRequestWebhookMapperPlugin();
+        return null;
     }
 }

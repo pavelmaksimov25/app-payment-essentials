@@ -1,6 +1,0 @@
-stripe.account_id.not_connected_to_the_platform_account,Stripe account ist nicht mit dem Platform Account verbunden
-stripe.configuration.error.account_id.is_required,Stripe account ID ist ein Pflichtfeld
-stripe.configuration.error.account_id.format,Stripe account ID muss mit „acct_“ beginnen
-stripe.mode.error.mode.is_required,Die Auswahl einer Umgebung ist erforderlich
-stripe.mode.error.mode.format,Ungültige Umgebung
-stripe.configuration.error.page_label.length,Seitenbeschriftung ist zu lang

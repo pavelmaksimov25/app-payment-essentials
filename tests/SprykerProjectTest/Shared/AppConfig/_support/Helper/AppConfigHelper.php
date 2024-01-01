@@ -59,9 +59,9 @@ class AppConfigHelper extends Module
     public function assertAppConfigurationForTenantDoesNotExist(string $tenantIdentifier): void
     {
         $spyAppConfigQuery = SpyAppConfigQuery::create();
-        $tenantStripeConfigurationEntity = $spyAppConfigQuery->findOneByTenantIdentifier($tenantIdentifier);
+        $tenantAppConfigurationEntity = $spyAppConfigQuery->findOneByTenantIdentifier($tenantIdentifier);
 
-        $this->assertNull($tenantStripeConfigurationEntity, sprintf('Expected not to find an AppConfiguration for the Tenant "%s" but found one.', $tenantIdentifier));
+        $this->assertNull($tenantAppConfigurationEntity, sprintf('Expected not to find an AppConfiguration for the Tenant "%s" but found one.', $tenantIdentifier));
     }
 
     /**
