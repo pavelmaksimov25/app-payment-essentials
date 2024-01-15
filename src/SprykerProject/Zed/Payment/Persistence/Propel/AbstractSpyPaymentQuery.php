@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Persistence\Propel;
+namespace AppPayment\Zed\Payment\Persistence\Propel;
 
 use Orm\Zed\Payment\Persistence\Base\SpyPaymentQuery;
 

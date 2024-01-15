@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBroker;
+namespace AppPayment\Zed\MessageBroker;
 
 use Spryker\Shared\MessageBrokerAws\MessageBrokerAwsConstants;
 use Spryker\Zed\MessageBroker\MessageBrokerConfig as SprykerMessageBrokerConfig;

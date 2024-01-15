@@ -1,4 +1,4 @@
-namespace: SprykerProjectTest\AsyncApi\Payment
+namespace: AppPaymentTest\AsyncApi\Payment
 
 paths:
     tests: .
@@ -21,8 +21,8 @@ suites:
         modules:
             enabled:
                 - Asserts
-                - \SprykerProjectTest\AsyncApi\Payment\Helper\PaymentHelper
-                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \AppPaymentTest\AsyncApi\Payment\Helper\PaymentHelper
+                - \AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelper
                 - \SprykerTest\Shared\Testify\Helper\Environment
                 - \SprykerTest\Shared\Testify\Helper\ConfigHelper
                 -
@@ -42,5 +42,5 @@ suites:
                             - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationRequestedMessageHandlerPlugin
                             - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationRequestedMessageHandlerPlugin
                             - \SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundRequestedMessageHandlerPlugin
-                - \SprykerProjectTest\Shared\Payment\Helper\PaymentHelper
-                - \SprykerProjectTest\Shared\Payment\Helper\PaymentAssertionHelper
+                - \AppPaymentTest\Shared\Payment\Helper\PaymentHelper
+                - \AppPaymentTest\Shared\Payment\Helper\PaymentAssertionHelper

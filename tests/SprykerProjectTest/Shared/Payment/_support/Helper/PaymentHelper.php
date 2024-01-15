@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Shared\Payment\Helper;
+namespace AppPaymentTest\Shared\Payment\Helper;
 
 use Codeception\Module;
 use Generated\Shared\DataBuilder\CapturePaymentRequestBuilder;
@@ -20,7 +20,7 @@ use Orm\Zed\Payment\Persistence\SpyPaymentQuery;
 use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
 use SprykerProject\Zed\Payment\Persistence\PaymentEntityManager;
 use SprykerProject\Zed\Payment\Persistence\PaymentRepository;
-use SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelperTrait;
+use AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelperTrait;
 use Ramsey\Uuid\Uuid;
 use SprykerTest\Shared\Testify\Helper\DataCleanupHelperTrait;
 

@@ -5,27 +5,27 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business;
+namespace AppPayment\Zed\Payment\Business;
 
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentCancelReservationRequestedMessageHandler;
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentCancelReservationRequestedMessageHandlerInterface;
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentConfirmationRequestedMessageHandler;
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentConfirmationRequestedMessageHandlerInterface;
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentRefundRequestedMessageHandler;
-use SprykerProject\Zed\Payment\Business\MessageBroker\PaymentRefundRequestedMessageHandlerInterface;
-use SprykerProject\Zed\Payment\Business\MessageBroker\TenantIdentifier\TenantIdentifierExtractor;
-use SprykerProject\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
-use SprykerProject\Zed\Payment\Business\Payment\Capture\PaymentCapturer;
-use SprykerProject\Zed\Payment\Business\Payment\Initialize\PaymentInitializer;
-use SprykerProject\Zed\Payment\Business\Payment\Message\MessageSender;
-use SprykerProject\Zed\Payment\Business\Payment\Page\PaymentPage;
-use SprykerProject\Zed\Payment\Business\Payment\Payment;
-use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusTransitionValidator;
-use SprykerProject\Zed\Payment\Business\Payment\Validate\ConfigurationValidator;
-use SprykerProject\Zed\Payment\Business\Payment\Webhook\WebhookHandler;
-use SprykerProject\Zed\Payment\Business\Payment\Webhook\WebhookMessageSender;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
-use SprykerProject\Zed\Payment\PaymentDependencyProvider;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentCancelReservationRequestedMessageHandler;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentCancelReservationRequestedMessageHandlerInterface;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentConfirmationRequestedMessageHandler;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentConfirmationRequestedMessageHandlerInterface;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentRefundRequestedMessageHandler;
+use AppPayment\Zed\Payment\Business\MessageBroker\PaymentRefundRequestedMessageHandlerInterface;
+use AppPayment\Zed\Payment\Business\MessageBroker\TenantIdentifier\TenantIdentifierExtractor;
+use AppPayment\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
+use AppPayment\Zed\Payment\Business\Payment\Capture\PaymentCapturer;
+use AppPayment\Zed\Payment\Business\Payment\Initialize\PaymentInitializer;
+use AppPayment\Zed\Payment\Business\Payment\Message\MessageSender;
+use AppPayment\Zed\Payment\Business\Payment\Page\PaymentPage;
+use AppPayment\Zed\Payment\Business\Payment\Payment;
+use AppPayment\Zed\Payment\Business\Payment\Status\PaymentStatusTransitionValidator;
+use AppPayment\Zed\Payment\Business\Payment\Validate\ConfigurationValidator;
+use AppPayment\Zed\Payment\Business\Payment\Webhook\WebhookHandler;
+use AppPayment\Zed\Payment\Business\Payment\Webhook\WebhookMessageSender;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\PaymentDependencyProvider;
 use Spryker\Service\UtilEncoding\UtilEncodingService;
 use Spryker\Zed\AppKernel\Business\AppKernelFacade;
 use Spryker\Zed\AppKernel\Business\AppKernelFacadeInterface;
@@ -33,9 +33,9 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
 use Spryker\Zed\MessageBroker\Business\MessageBrokerFacade;
 
 /**
- * @method \SprykerProject\Zed\Payment\PaymentConfig getConfig()
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentEntityManagerInterface getEntityManager()
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
+ * @method \AppPayment\Zed\Payment\PaymentConfig getConfig()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentEntityManagerInterface getEntityManager()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
  */
 class PaymentBusinessFactory extends AbstractBusinessFactory
 {
@@ -82,7 +82,7 @@ class PaymentBusinessFactory extends AbstractBusinessFactory
 
     protected function getPlatformPlugin(): PlatformPluginInterface
     {
-        /** @phpstan-var \SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface */
+        /** @phpstan-var \AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface */
         return $this->getProvidedDependency(PaymentDependencyProvider::PLUGIN_PLATFORM);
     }
 

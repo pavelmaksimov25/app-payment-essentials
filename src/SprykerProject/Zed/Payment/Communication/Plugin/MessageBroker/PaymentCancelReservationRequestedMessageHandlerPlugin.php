@@ -5,15 +5,15 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Communication\Plugin\MessageBroker;
+namespace AppPayment\Zed\Payment\Communication\Plugin\MessageBroker;
 
 use Generated\Shared\Transfer\PaymentCancelReservationRequestedTransfer;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 use Spryker\Zed\MessageBrokerExtension\Dependency\Plugin\MessageHandlerPluginInterface;
 
 /**
- * @method \SprykerProject\Zed\Payment\Business\PaymentFacadeInterface getFacade()
- * @method \SprykerProject\Zed\Payment\PaymentConfig getConfig()
+ * @method \AppPayment\Zed\Payment\Business\PaymentFacadeInterface getFacade()
+ * @method \AppPayment\Zed\Payment\PaymentConfig getConfig()
  */
 class PaymentCancelReservationRequestedMessageHandlerPlugin extends AbstractPlugin implements MessageHandlerPluginInterface
 {

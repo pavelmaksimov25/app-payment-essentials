@@ -5,16 +5,16 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Page;
+namespace AppPayment\Zed\Payment\Business\Payment\Page;
 
 use Generated\Shared\Transfer\PaymentPageRequestTransfer;
 use Generated\Shared\Transfer\PaymentPageResponseTransfer;
-use SprykerProject\Zed\Payment\Business\Message\MessageBuilder;
-use SprykerProject\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPaymentPagePluginInterface;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
-use SprykerProject\Zed\Payment\Persistence\Exception\PaymentByTransactionIdNotFoundException;
-use SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface;
+use AppPayment\Zed\Payment\Business\Message\MessageBuilder;
+use AppPayment\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPaymentPagePluginInterface;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\Persistence\Exception\PaymentByTransactionIdNotFoundException;
+use AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface;
 use Spryker\Shared\Log\LoggerTrait;
 use Throwable;
 

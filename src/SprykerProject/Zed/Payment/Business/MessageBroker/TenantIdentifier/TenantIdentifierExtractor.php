@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\MessageBroker\TenantIdentifier;
+namespace AppPayment\Zed\Payment\Business\MessageBroker\TenantIdentifier;
 
 use Spryker\Shared\Kernel\Transfer\AbstractTransfer;
 

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business;
+namespace AppPayment\Zed\Payment\Business;
 
 use Generated\Shared\Transfer\AppConfigTransfer;
 use Generated\Shared\Transfer\AppDisconnectTransfer;
@@ -23,9 +23,9 @@ use Generated\Shared\Transfer\WebhookResponseTransfer;
 use Spryker\Zed\Kernel\Business\AbstractFacade;
 
 /**
- * @method \SprykerProject\Zed\Payment\Business\PaymentBusinessFactory getFactory()
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentEntityManagerInterface getEntityManager()
+ * @method \AppPayment\Zed\Payment\Business\PaymentBusinessFactory getFactory()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentEntityManagerInterface getEntityManager()
  */
 class PaymentFacade extends AbstractFacade implements PaymentFacadeInterface
 {

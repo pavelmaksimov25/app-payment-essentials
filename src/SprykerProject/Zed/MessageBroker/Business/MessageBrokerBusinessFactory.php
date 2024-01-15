@@ -5,14 +5,14 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBroker\Business;
+namespace AppPayment\Zed\MessageBroker\Business;
 
-use SprykerProject\Zed\MessageBroker\Business\Worker\Worker;
+use AppPayment\Zed\MessageBroker\Business\Worker\Worker;
 use Spryker\Zed\MessageBroker\Business\MessageBrokerBusinessFactory as SprykerMessageBrokerBusinessFactory;
 use Spryker\Zed\MessageBroker\Business\Worker\WorkerInterface;
 
 /**
- * @method \SprykerProject\Zed\MessageBroker\MessageBrokerConfig getConfig()
+ * @method \AppPayment\Zed\MessageBroker\MessageBrokerConfig getConfig()
  */
 class MessageBrokerBusinessFactory extends SprykerMessageBrokerBusinessFactory
 {

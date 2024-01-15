@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Persistence\Propel\Payment\Mapper;
+namespace AppPayment\Zed\Payment\Persistence\Propel\Payment\Mapper;
 
 use Generated\Shared\Transfer\PaymentTransfer;
 use Orm\Zed\Payment\Persistence\SpyPayment;

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\Console;
+namespace AppPayment\Glue\Console;
 
 use Spryker\Glue\Console\ConsoleDependencyProvider as SprykerConsoleDependencyProvider;
 use Spryker\Glue\GlueApplication\Plugin\Console\RouterCacheWarmUpConsole;

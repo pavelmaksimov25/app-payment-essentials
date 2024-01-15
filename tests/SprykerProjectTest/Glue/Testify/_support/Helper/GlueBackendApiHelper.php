@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Glue\Testify\Helper;
+namespace AppPaymentTest\Glue\Testify\Helper;
 
 use Codeception\Stub;
 use Codeception\Util\HttpCode;

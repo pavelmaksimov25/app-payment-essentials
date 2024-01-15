@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Log;
+namespace AppPayment\Zed\Log;
 
 use Spryker\Zed\Log\Communication\Plugin\Handler\ExceptionStreamHandlerPlugin;
 use Spryker\Zed\Log\Communication\Plugin\Handler\StreamHandlerPlugin;

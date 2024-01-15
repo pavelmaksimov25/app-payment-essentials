@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace SprykerProjectTest\Zed\Payment;
+namespace AppPaymentTest\Zed\Payment;
 
 use Codeception\Actor;
 
@@ -25,7 +25,7 @@ use Codeception\Actor;
  * @method void comment($description)
  * @method void pause($vars = [])
  *
- * @SuppressWarnings(\SprykerProjectTest\Zed\Payment\PHPMD)
+ * @SuppressWarnings(\AppPaymentTest\Zed\Payment\PHPMD)
  */
 class PaymentPersistenceTester extends Actor
 {

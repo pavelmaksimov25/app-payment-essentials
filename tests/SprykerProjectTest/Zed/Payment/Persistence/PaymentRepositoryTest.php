@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Zed\Payment\Persistence;
+namespace AppPaymentTest\Zed\Payment\Persistence;
 
 use Codeception\Test\Unit;
 use Exception;
@@ -16,7 +16,7 @@ use Ramsey\Uuid\Uuid;
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group Zed
  * @group Payment
  * @group Persistence

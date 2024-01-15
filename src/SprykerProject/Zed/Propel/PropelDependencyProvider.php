@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Propel;
+namespace AppPayment\Zed\Propel;
 
 use Spryker\Zed\Propel\Communication\Plugin\Propel\ForeignKeyIndexPropelSchemaElementFilterPlugin;
 use Spryker\Zed\Propel\PropelDependencyProvider as SprykerPropelDependencyProvider;

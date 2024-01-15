@@ -5,15 +5,15 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Persistence;
+namespace AppPayment\Zed\Payment\Persistence;
 
 use Generated\Shared\Transfer\PaymentTransfer;
 use Orm\Zed\Payment\Persistence\SpyPayment;
-use SprykerProject\Zed\Payment\Persistence\Exception\PaymentByTransactionIdNotFoundException;
+use AppPayment\Zed\Payment\Persistence\Exception\PaymentByTransactionIdNotFoundException;
 use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
 
 /**
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentPersistenceFactory getFactory()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentPersistenceFactory getFactory()
  */
 class PaymentEntityManager extends AbstractEntityManager implements PaymentEntityManagerInterface
 {

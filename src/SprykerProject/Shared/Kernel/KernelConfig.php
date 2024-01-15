@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Shared\Kernel;
+namespace AppPayment\Shared\Kernel;
 
 use Spryker\Shared\Kernel\KernelConfig as SprykerKernelConfig;
 

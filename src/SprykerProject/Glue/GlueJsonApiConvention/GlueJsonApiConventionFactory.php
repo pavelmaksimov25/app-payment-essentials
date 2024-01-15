@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueJsonApiConvention;
+namespace AppPayment\Glue\GlueJsonApiConvention;
 
-use SprykerProject\Glue\GlueJsonApiConvention\Response\JsonGlueResponseFormatter;
+use AppPayment\Glue\GlueJsonApiConvention\Response\JsonGlueResponseFormatter;
 use Spryker\Glue\GlueJsonApiConvention\GlueJsonApiConventionFactory as SprykerGlueJsonApiConventionFactory;
 use Spryker\Glue\GlueJsonApiConvention\Response\JsonGlueResponseFormatterInterface;
 

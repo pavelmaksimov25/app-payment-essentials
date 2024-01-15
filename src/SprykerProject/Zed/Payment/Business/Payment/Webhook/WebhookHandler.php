@@ -5,18 +5,18 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Webhook;
+namespace AppPayment\Zed\Payment\Business\Payment\Webhook;
 
 use Generated\Shared\Transfer\WebhookRequestTransfer;
 use Generated\Shared\Transfer\WebhookResponseTransfer;
 use InvalidArgumentException;
-use SprykerProject\Zed\Payment\Business\Message\MessageBuilder;
-use SprykerProject\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
-use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusTransitionValidator;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginTransactionIdAwareInterface;
-use SprykerProject\Zed\Payment\Persistence\PaymentEntityManagerInterface;
-use SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface;
+use AppPayment\Zed\Payment\Business\Message\MessageBuilder;
+use AppPayment\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
+use AppPayment\Zed\Payment\Business\Payment\Status\PaymentStatusTransitionValidator;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginTransactionIdAwareInterface;
+use AppPayment\Zed\Payment\Persistence\PaymentEntityManagerInterface;
+use AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface;
 use Spryker\Shared\Log\LoggerTrait;
 use Spryker\Zed\Kernel\Persistence\EntityManager\TransactionTrait;
 use Throwable;

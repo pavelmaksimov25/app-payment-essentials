@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Message;
+namespace AppPayment\Zed\Payment\Business\Payment\Message;
 
 use ArrayObject;
 use Generated\Shared\Transfer\AppConfigTransfer;
@@ -18,7 +18,7 @@ use Generated\Shared\Transfer\PaymentMethodDeletedTransfer;
 use Generated\Shared\Transfer\PaymentPreauthorizedTransfer;
 use Generated\Shared\Transfer\PaymentTransfer;
 use Generated\Shared\Transfer\QuoteItemTransfer;
-use SprykerProject\Zed\Payment\PaymentConfig;
+use AppPayment\Zed\Payment\PaymentConfig;
 use Spryker\Shared\Kernel\Transfer\TransferInterface;
 use Spryker\Zed\AppKernel\AppKernelConfig;
 use Spryker\Zed\AppKernel\Business\AppKernelFacadeInterface;

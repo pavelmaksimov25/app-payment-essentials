@@ -5,15 +5,15 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\AsyncApi\Payment\PaymentTests\PaymentCommands;
+namespace AppPaymentTest\AsyncApi\Payment\PaymentTests\PaymentCommands;
 
 use Codeception\Test\Unit;
-use SprykerProjectTest\AsyncApi\Payment\PaymentAsyncApiTester;
+use AppPaymentTest\AsyncApi\Payment\PaymentAsyncApiTester;
 
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group AsyncApi
  * @group Payment
  * @group PaymentTests

@@ -1,4 +1,4 @@
-namespace: SprykerProjectTest\Glue\AppConfig
+namespace: AppPaymentTest\Glue\AppConfig
 
 paths:
     tests: .
@@ -22,7 +22,7 @@ suites:
         actor: AppConfigTester
         modules:
             enabled:
-                - \SprykerProjectTest\Glue\PaymentBackendApi\Helper\PaymentBackendApiHelper
+                - \AppPaymentTest\Glue\PaymentBackendApi\Helper\PaymentBackendApiHelper
                 - \SprykerTest\Shared\Testify\Helper\Environment
                 -
                     \SprykerTest\Shared\Testify\Helper\LocatorHelper:
@@ -33,9 +33,9 @@ suites:
                 - \SprykerTest\Glue\Testify\Helper\DependencyProviderHelper
                 - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
                 - \SprykerTest\Shared\Testify\Helper\DependencyHelper
-                - \SprykerProjectTest\Glue\Testify\Helper\GlueBackendApiHelper
+                - \AppPaymentTest\Glue\Testify\Helper\GlueBackendApiHelper
                 - \SprykerTest\Glue\Testify\Helper\JsonPath
                 - \SprykerTest\Zed\Testify\Helper\Business\BusinessHelper
-                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelper
                 - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
                 - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper

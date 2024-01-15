@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Shared\AppConfig\Helper;
+namespace AppPaymentTest\Shared\AppConfig\Helper;
 
 use Codeception\Module;
 use Generated\Shared\Transfer\AppConfigCriteriaTransfer;

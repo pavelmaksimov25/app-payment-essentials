@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Scheduler;
+namespace AppPayment\Zed\Scheduler;
 
 use Spryker\Zed\Scheduler\SchedulerConfig as SprykerSchedulerConfig;
 

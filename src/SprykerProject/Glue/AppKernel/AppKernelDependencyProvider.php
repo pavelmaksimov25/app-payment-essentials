@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\AppKernel;
+namespace AppPayment\Glue\AppKernel;
 
-use SprykerProject\Glue\PaymentBackendApi\Plugin\AppKernel\PaymentConfigurationValidatorPlugin;
+use AppPayment\Glue\PaymentBackendApi\Plugin\AppKernel\PaymentConfigurationValidatorPlugin;
 use Spryker\Glue\AppKernel\AppKernelDependencyProvider as SprykerAppKernelDependencyProvider;
 
 class AppKernelDependencyProvider extends SprykerAppKernelDependencyProvider

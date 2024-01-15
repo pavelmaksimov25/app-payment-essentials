@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace SprykerProjectTest\Glue\PaymentBackendApi;
+namespace AppPaymentTest\Glue\PaymentBackendApi;
 
 use Codeception\Actor;
 
@@ -25,7 +25,7 @@ use Codeception\Actor;
  * @method void comment($description)
  * @method void pause($vars = [])
  *
- * @SuppressWarnings(\SprykerProjectTest\Glue\PaymentBackendApi\PHPMD)
+ * @SuppressWarnings(\AppPaymentTest\Glue\PaymentBackendApi\PHPMD)
  */
 class PaymentBackendApiTester extends Actor
 {

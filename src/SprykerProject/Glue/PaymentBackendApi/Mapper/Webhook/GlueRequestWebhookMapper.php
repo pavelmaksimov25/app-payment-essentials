@@ -5,11 +5,11 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\PaymentBackendApi\Mapper\Webhook;
+namespace AppPayment\Glue\PaymentBackendApi\Mapper\Webhook;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\WebhookRequestTransfer;
-use SprykerProject\Glue\PaymentBackendApi\Plugin\PaymentBackendApi\GlueRequestWebhookMapperPluginInterface;
+use AppPayment\Glue\PaymentBackendApi\Plugin\PaymentBackendApi\GlueRequestWebhookMapperPluginInterface;
 
 class GlueRequestWebhookMapper implements GlueRequestWebhookMapperInterface
 {

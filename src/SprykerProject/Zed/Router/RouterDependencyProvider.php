@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Router;
+namespace AppPayment\Zed\Router;
 
 use Spryker\Zed\Router\Communication\Plugin\Router\BackofficeRouterPlugin;
 use Spryker\Zed\Router\RouterDependencyProvider as SprykerRouterDependencyProvider;

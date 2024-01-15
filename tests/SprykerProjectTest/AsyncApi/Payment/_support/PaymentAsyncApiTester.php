@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace SprykerProjectTest\AsyncApi\Payment;
+namespace AppPaymentTest\AsyncApi\Payment;
 
 use Codeception\Actor;
 use Codeception\Stub;
@@ -29,7 +29,7 @@ use SprykerProject\Zed\Payment\PaymentDependencyProvider;
  * @method void comment($description)
  * @method void pause($vars = [])
  *
- * @SuppressWarnings(\SprykerProjectTest\AsyncApi\Payment\PHPMD)
+ * @SuppressWarnings(\AppPaymentTest\AsyncApi\Payment\PHPMD)
  */
 class PaymentAsyncApiTester extends Actor
 {

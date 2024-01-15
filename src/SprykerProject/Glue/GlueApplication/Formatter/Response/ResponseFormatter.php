@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueApplication\Formatter\Response;
+namespace AppPayment\Glue\GlueApplication\Formatter\Response;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Spryker\Glue\GlueApplication\Formatter\Response\ResponseFormatter as SprykerResponseFormatter;

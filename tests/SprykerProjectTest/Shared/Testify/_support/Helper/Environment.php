@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Shared\Testify\Helper;
+namespace AppPaymentTest\Shared\Testify\Helper;
 
 use Codeception\Module;
 use Spryker\Shared\Kernel\CodeBucket\Config\CodeBucketConfig;

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueJsonApiConvention\Response;
+namespace AppPayment\Glue\GlueJsonApiConvention\Response;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Spryker\Glue\GlueJsonApiConvention\Response\JsonGlueResponseFormatter as SprykerJsonGlueResponseFormatter;

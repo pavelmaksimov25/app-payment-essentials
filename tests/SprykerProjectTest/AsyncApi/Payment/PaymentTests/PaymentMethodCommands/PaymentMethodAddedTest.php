@@ -5,12 +5,12 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\AsyncApi\Payment\PaymentTests\PaymentMethodCommands;
+namespace AppPaymentTest\AsyncApi\Payment\PaymentTests\PaymentMethodCommands;
 
 use Codeception\Test\Unit;
 use Generated\Shared\Transfer\AppConfigTransfer;
 use Generated\Shared\Transfer\PaymentMethodAddedTransfer;
-use SprykerProjectTest\AsyncApi\Payment\PaymentAsyncApiTester;
+use AppPaymentTest\AsyncApi\Payment\PaymentAsyncApiTester;
 use Ramsey\Uuid\Uuid;
 use Spryker\Zed\AppKernel\AppKernelConfig;
 use Spryker\Zed\AppKernel\Business\AppKernelFacade;
@@ -18,7 +18,7 @@ use Spryker\Zed\AppKernel\Business\AppKernelFacade;
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group AsyncApi
  * @group Payment
  * @group PaymentTests

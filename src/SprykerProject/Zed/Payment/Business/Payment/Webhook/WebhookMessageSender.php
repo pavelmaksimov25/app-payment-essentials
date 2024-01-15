@@ -5,11 +5,11 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Webhook;
+namespace AppPayment\Zed\Payment\Business\Payment\Webhook;
 
 use Generated\Shared\Transfer\WebhookRequestTransfer;
-use SprykerProject\Zed\Payment\Business\Payment\Message\MessageSender;
-use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
+use AppPayment\Zed\Payment\Business\Payment\Message\MessageSender;
+use AppPayment\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
 use Spryker\Shared\Log\LoggerTrait;
 
 class WebhookMessageSender

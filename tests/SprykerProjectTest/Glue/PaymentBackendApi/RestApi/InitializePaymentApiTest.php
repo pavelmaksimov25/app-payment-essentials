@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Glue\PaymentBackendApi\RestApi;
+namespace AppPaymentTest\Glue\PaymentBackendApi\RestApi;
 
 use Codeception\Stub;
 use Codeception\Test\Unit;
@@ -17,7 +17,7 @@ use GuzzleHttp\RequestOptions;
 use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 use SprykerProject\Zed\Payment\PaymentConfig;
 use SprykerProject\Zed\Payment\PaymentDependencyProvider;
-use SprykerProjectTest\Glue\PaymentBackendApi\PaymentBackendApiTester;
+use AppPaymentTest\Glue\PaymentBackendApi\PaymentBackendApiTester;
 use Ramsey\Uuid\Uuid;
 use SprykerTest\Shared\Testify\Helper\DependencyHelperTrait;
 use Symfony\Component\HttpFoundation\Response;
@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group Glue
  * @group PaymentBackendApi
  * @group RestApi

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueApplication\Bootstrap;
+namespace AppPayment\Glue\GlueApplication\Bootstrap;
 
 use Spryker\Glue\GlueApplication\Bootstrap\GlueBootstrap;
 use Spryker\Glue\GlueBackendApiApplication\Plugin\GlueApplication\BackendApiGlueApplicationBootstrapPlugin;

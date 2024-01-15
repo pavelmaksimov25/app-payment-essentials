@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Console;
+namespace AppPayment\Zed\Console;
 
-use SprykerProject\Zed\MessageBroker\Communication\Plugin\Console\MessageBrokerWorkerConsole;
+use AppPayment\Zed\MessageBroker\Communication\Plugin\Console\MessageBrokerWorkerConsole;
 use SecurityChecker\Command\SecurityCheckerCommand;
 use Spryker\Zed\Cache\Communication\Console\EmptyAllCachesConsole;
 use Spryker\Zed\Console\ConsoleDependencyProvider as SprykerConsoleDependencyProvider;
@@ -54,7 +54,7 @@ use Spryker\Zed\Translator\Communication\Console\GenerateTranslationCacheConsole
 use Spryker\Zed\Twig\Communication\Plugin\Application\TwigApplicationPlugin;
 
 /**
- * @method \SprykerProject\Zed\Console\ConsoleConfig getConfig()
+ * @method \AppPayment\Zed\Console\ConsoleConfig getConfig()
  */
 class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
 {

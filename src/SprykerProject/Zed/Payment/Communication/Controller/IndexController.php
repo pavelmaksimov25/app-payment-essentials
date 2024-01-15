@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Communication\Controller;
+namespace AppPayment\Zed\Payment\Communication\Controller;
 
 use Generated\Shared\Transfer\PaymentPageRequestTransfer;
 use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
@@ -13,9 +13,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @method \SprykerProject\Zed\Payment\Business\PaymentFacadeInterface getFacade()
+ * @method \AppPayment\Zed\Payment\Business\PaymentFacadeInterface getFacade()
  * @method \Spryker\Zed\Payment\Communication\PaymentCommunicationFactory getFactory()
- * @method \SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
+ * @method \AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface getRepository()
  */
 class IndexController extends AbstractController
 {

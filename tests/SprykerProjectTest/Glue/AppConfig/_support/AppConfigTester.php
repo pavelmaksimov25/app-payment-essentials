@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace SprykerProjectTest\Glue\AppConfig;
+namespace AppPaymentTest\Glue\AppConfig;
 
 use Codeception\Actor;
 
@@ -25,7 +25,7 @@ use Codeception\Actor;
  * @method void comment($description)
  * @method void pause($vars = [])
  *
- * @SuppressWarnings(\SprykerProjectTest\Glue\StripeConfig\PHPMD)
+ * @SuppressWarnings(\AppPaymentTest\Glue\StripeConfig\PHPMD)
  */
 class AppConfigTester extends Actor
 {

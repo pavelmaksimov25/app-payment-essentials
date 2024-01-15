@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\PaymentBackendApi\Mapper\Payment;
+namespace AppPayment\Glue\PaymentBackendApi\Mapper\Payment;
 
 use Generated\Shared\Transfer\GlueResponseTransfer;
 use Generated\Shared\Transfer\InitializePaymentResponseTransfer;

@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBrokerAws;
+namespace AppPayment\Zed\MessageBrokerAws;
 
-use SprykerProject\Zed\Payment\Communication\Plugin\MessageBrokerAws\ConsumerIdHttpChannelMessageReceiverRequestExpanderPlugin;
+use AppPayment\Zed\Payment\Communication\Plugin\MessageBrokerAws\ConsumerIdHttpChannelMessageReceiverRequestExpanderPlugin;
 use Spryker\Zed\MessageBrokerAws\MessageBrokerAwsDependencyProvider as SprykerMessageBrokerAwsDependencyProvider;
 use Spryker\Zed\OauthClient\Communication\Plugin\MessageBrokerAws\AccessTokenHttpChannelMessageReceiverRequestExpanderPlugin;
 

@@ -1,4 +1,4 @@
-namespace: SprykerProjectTest\Zed\Payment
+namespace: AppPaymentTest\Zed\Payment
 
 paths:
     tests: .
@@ -18,13 +18,13 @@ suites:
         actor: PaymentCommunicationTester
         modules:
             enabled:
-                - \SprykerProjectTest\Zed\Testify\Helper\BootstrapHelper
+                - \AppPaymentTest\Zed\Testify\Helper\BootstrapHelper
                 - \SprykerTest\Shared\Testify\Helper\ConfigHelper
                 - \SprykerTest\Zed\Testify\Helper\Business\BusinessHelper
                 - \SprykerTest\Shared\Testify\Helper\Environment
                 - \SprykerTest\Shared\Testify\Helper\DependencyHelper
-                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
-                - \SprykerProjectTest\Shared\Payment\Helper\PaymentHelper
+                - \AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \AppPaymentTest\Shared\Payment\Helper\PaymentHelper
                 - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
                 - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper
                 - \SprykerTest\Shared\Propel\Helper\TransactionHelper

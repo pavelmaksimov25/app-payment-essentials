@@ -5,14 +5,14 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\PaymentBackendApi\Controller;
+namespace AppPayment\Glue\PaymentBackendApi\Controller;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueResponseTransfer;
 use Spryker\Glue\Kernel\Backend\Controller\AbstractController;
 
 /**
- * @method \SprykerProject\Glue\PaymentBackendApi\PaymentBackendApiFactory getFactory()
+ * @method \AppPayment\Glue\PaymentBackendApi\PaymentBackendApiFactory getFactory()
  */
 class WebhooksController extends AbstractController
 {

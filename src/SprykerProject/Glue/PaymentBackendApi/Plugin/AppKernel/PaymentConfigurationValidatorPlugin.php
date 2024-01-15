@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace SprykerProject\Glue\PaymentBackendApi\Plugin\AppKernel;
+namespace AppPayment\Glue\PaymentBackendApi\Plugin\AppKernel;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueRequestValidationTransfer;
@@ -15,7 +15,7 @@ use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\RequestValidatorPlug
 use Spryker\Glue\Kernel\AbstractPlugin;
 
 /**
- * @method \SprykerProject\Glue\PaymentBackendApi\PaymentBackendApiFactory getFactory()
+ * @method \AppPayment\Glue\PaymentBackendApi\PaymentBackendApiFactory getFactory()
  */
 class PaymentConfigurationValidatorPlugin extends AbstractPlugin implements RequestValidatorPluginInterface
 {

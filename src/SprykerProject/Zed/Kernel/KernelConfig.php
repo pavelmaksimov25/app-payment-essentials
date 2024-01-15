@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Kernel;
+namespace AppPayment\Zed\Kernel;
 
 use Spryker\Zed\Kernel\KernelConfig as SprykerKernelConfig;
 

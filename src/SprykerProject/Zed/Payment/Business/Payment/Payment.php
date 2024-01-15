@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment;
+namespace AppPayment\Zed\Payment\Business\Payment;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueRequestValidationTransfer;
@@ -13,11 +13,11 @@ use Generated\Shared\Transfer\InitializePaymentRequestTransfer;
 use Generated\Shared\Transfer\InitializePaymentResponseTransfer;
 use Generated\Shared\Transfer\PaymentPageRequestTransfer;
 use Generated\Shared\Transfer\PaymentPageResponseTransfer;
-use SprykerProject\Zed\Payment\Business\Payment\Initialize\PaymentInitializer;
-use SprykerProject\Zed\Payment\Business\Payment\Page\PaymentPage;
-use SprykerProject\Zed\Payment\Business\Payment\Validate\ConfigurationValidator;
-use SprykerProject\Zed\Payment\Business\Payment\Webhook\WebhookHandler;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\Business\Payment\Initialize\PaymentInitializer;
+use AppPayment\Zed\Payment\Business\Payment\Page\PaymentPage;
+use AppPayment\Zed\Payment\Business\Payment\Validate\ConfigurationValidator;
+use AppPayment\Zed\Payment\Business\Payment\Webhook\WebhookHandler;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 
 class Payment
 {

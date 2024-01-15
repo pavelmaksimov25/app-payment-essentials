@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\AsyncApi\Payment\Helper;
+namespace AppPaymentTest\AsyncApi\Payment\Helper;
 
 use Codeception\Module;
 use Generated\Shared\DataBuilder\PaymentCancelReservationRequestedBuilder;

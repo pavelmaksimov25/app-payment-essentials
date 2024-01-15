@@ -5,16 +5,16 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\AsyncApi\Payment\PaymentTests\PaymentEvents;
+namespace AppPaymentTest\AsyncApi\Payment\PaymentTests\PaymentEvents;
 
 use Codeception\Test\Unit;
-use SprykerProjectTest\AsyncApi\Payment\PaymentAsyncApiTester;
+use AppPaymentTest\AsyncApi\Payment\PaymentAsyncApiTester;
 use Spryker\Zed\MessageBroker\Business\MessageBrokerFacade;
 
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group AsyncApi
  * @group Payment
  * @group PaymentTests

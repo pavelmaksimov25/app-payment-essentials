@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Zed\Payment\Communication\Controller;
+namespace AppPaymentTest\Zed\Payment\Communication\Controller;
 
 use Codeception\Stub;
 use Codeception\Test\Unit;
@@ -16,14 +16,14 @@ use SprykerProject\Zed\Payment\Business\Message\MessageBuilder;
 use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPaymentPagePluginInterface;
 use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 use SprykerProject\Zed\Payment\PaymentDependencyProvider;
-use SprykerProjectTest\Zed\Payment\PaymentCommunicationTester;
+use AppPaymentTest\Zed\Payment\PaymentCommunicationTester;
 use Ramsey\Uuid\Uuid;
 use SprykerTest\Shared\Testify\Helper\DependencyHelperTrait;
 
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group Zed
  * @group Payment
  * @group Communication

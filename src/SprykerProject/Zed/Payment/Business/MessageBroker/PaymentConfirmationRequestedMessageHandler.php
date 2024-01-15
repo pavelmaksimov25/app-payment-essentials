@@ -5,13 +5,13 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\MessageBroker;
+namespace AppPayment\Zed\Payment\Business\MessageBroker;
 
 use Generated\Shared\Transfer\CapturePaymentRequestTransfer;
 use Generated\Shared\Transfer\PaymentConfirmationRequestedTransfer;
-use SprykerProject\Zed\Payment\Business\MessageBroker\TenantIdentifier\TenantIdentifierExtractor;
-use SprykerProject\Zed\Payment\Business\Payment\Capture\PaymentCapturer;
-use SprykerProject\Zed\Payment\Persistence\PaymentRepositoryInterface;
+use AppPayment\Zed\Payment\Business\MessageBroker\TenantIdentifier\TenantIdentifierExtractor;
+use AppPayment\Zed\Payment\Business\Payment\Capture\PaymentCapturer;
+use AppPayment\Zed\Payment\Persistence\PaymentRepositoryInterface;
 
 class PaymentConfirmationRequestedMessageHandler implements PaymentConfirmationRequestedMessageHandlerInterface
 {

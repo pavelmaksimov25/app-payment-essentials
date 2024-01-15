@@ -5,14 +5,14 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Validate;
+namespace AppPayment\Zed\Payment\Business\Payment\Validate;
 
 use Generated\Shared\Transfer\AppConfigTransfer;
 use Generated\Shared\Transfer\AppConfigValidateResponseTransfer;
 use Generated\Shared\Transfer\GlueErrorTransfer;
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueRequestValidationTransfer;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 use Spryker\Service\UtilEncoding\UtilEncodingServiceInterface;
 use Spryker\Shared\Log\LoggerTrait;
 use Symfony\Component\HttpFoundation\Response;

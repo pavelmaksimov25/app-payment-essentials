@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Shared\AppConfig\Helper;
+namespace AppPaymentTest\Shared\AppConfig\Helper;
 
 use Codeception\Module;
 
@@ -13,7 +13,7 @@ trait AppConfigHelperTrait
 {
     protected function getAppConfigHelper(): AppConfigHelper
     {
-        /** @var \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper $appConfigHelper */
+        /** @var \AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelper $appConfigHelper */
         $appConfigHelper = $this->getModule('\\' . AppConfigHelper::class);
 
         return $appConfigHelper;

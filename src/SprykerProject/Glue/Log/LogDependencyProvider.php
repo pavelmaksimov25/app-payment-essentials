@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\Log;
+namespace AppPayment\Glue\Log;
 
 use Spryker\Glue\Kernel\Container;
 use Spryker\Glue\Log\LogDependencyProvider as SprykerLogDependencyProvider;

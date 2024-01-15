@@ -5,16 +5,16 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business\Payment\Initialize;
+namespace AppPayment\Zed\Payment\Business\Payment\Initialize;
 
 use Generated\Shared\Transfer\InitializePaymentRequestTransfer;
 use Generated\Shared\Transfer\InitializePaymentResponseTransfer;
 use Generated\Shared\Transfer\PaymentTransfer;
-use SprykerProject\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
-use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
-use SprykerProject\Zed\Payment\PaymentConfig;
-use SprykerProject\Zed\Payment\Persistence\PaymentEntityManagerInterface;
+use AppPayment\Zed\Payment\Business\Payment\AppConfig\AppConfigLoader;
+use AppPayment\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\PaymentConfig;
+use AppPayment\Zed\Payment\Persistence\PaymentEntityManagerInterface;
 use Spryker\Shared\Log\LoggerTrait;
 use Spryker\Zed\Kernel\Persistence\EntityManager\TransactionTrait;
 use Throwable;

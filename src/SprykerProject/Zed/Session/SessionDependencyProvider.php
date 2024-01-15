@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Session;
+namespace AppPayment\Zed\Session;
 
 use Spryker\Zed\Session\SessionDependencyProvider as SprykerSessionDependencyProvider;
 use Spryker\Zed\SessionFile\Communication\Plugin\Session\SessionHandlerFileProviderPlugin;

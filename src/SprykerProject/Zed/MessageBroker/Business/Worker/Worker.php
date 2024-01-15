@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBroker\Business\Worker;
+namespace AppPayment\Zed\MessageBroker\Business\Worker;
 
 use Generated\Shared\Transfer\MessageBrokerWorkerConfigTransfer;
 use Spryker\Zed\MessageBroker\Business\Worker\Worker as SprykerWorker;

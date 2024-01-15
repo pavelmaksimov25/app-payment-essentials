@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Glue\AppConfig;
+namespace AppPaymentTest\Glue\AppConfig;
 
 use Codeception\Stub;
 use Codeception\Test\Unit;
@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group Glue
  * @group AppConfig
  * @group AppConfigTest

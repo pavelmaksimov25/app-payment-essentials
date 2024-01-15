@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Zed\Payment\Helper;
+namespace AppPaymentTest\Zed\Payment\Helper;
 
 use Codeception\Module;
 use SprykerProject\Zed\Payment\Business\PaymentBusinessFactory;

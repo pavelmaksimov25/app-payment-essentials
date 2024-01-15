@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Communication\Plugin\MessageBrokerAws;
+namespace AppPayment\Zed\Payment\Communication\Plugin\MessageBrokerAws;
 
 use Generated\Shared\Transfer\HttpRequestTransfer;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
@@ -14,8 +14,8 @@ use Spryker\Zed\MessageBrokerAwsExtension\Dependency\Plugin\HttpChannelMessageRe
 /**
  * @codeCoverageIgnore This will never be called in testing environment.
  *
- * @method \SprykerProject\Zed\Payment\PaymentConfig getConfig()
- * @method \SprykerProject\Zed\Payment\Business\PaymentFacadeInterface getFacade()
+ * @method \AppPayment\Zed\Payment\PaymentConfig getConfig()
+ * @method \AppPayment\Zed\Payment\Business\PaymentFacadeInterface getFacade()
  */
 class ConsumerIdHttpChannelMessageReceiverRequestExpanderPlugin extends AbstractPlugin implements HttpChannelMessageReceiverRequestExpanderPluginInterface
 {

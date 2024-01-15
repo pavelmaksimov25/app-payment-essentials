@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\MessageBroker\Communication\Plugin\Console;
+namespace AppPayment\Zed\MessageBroker\Communication\Plugin\Console;
 
 use Generated\Shared\Transfer\MessageBrokerWorkerConfigTransfer;
 use Spryker\Zed\MessageBroker\Communication\Plugin\Console\MessageBrokerWorkerConsole as SprykerMessageBrokerWorkerConsole;

@@ -5,12 +5,12 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\PaymentBackendApi\Mapper\Payment;
+namespace AppPayment\Glue\PaymentBackendApi\Mapper\Payment;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\InitializePaymentRequestTransfer;
 use GuzzleHttp\RequestOptions;
-use SprykerProject\Zed\Payment\PaymentConfig;
+use AppPayment\Zed\Payment\PaymentConfig;
 
 class GlueRequestPaymentMapper implements GlueRequestPaymentMapperInterface
 {

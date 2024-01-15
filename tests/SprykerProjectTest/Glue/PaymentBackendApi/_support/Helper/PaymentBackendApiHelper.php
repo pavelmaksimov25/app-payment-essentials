@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\Glue\PaymentBackendApi\Helper;
+namespace AppPaymentTest\Glue\PaymentBackendApi\Helper;
 
 use Codeception\Module;
 use Generated\Shared\Transfer\InitializePaymentResponseTransfer;

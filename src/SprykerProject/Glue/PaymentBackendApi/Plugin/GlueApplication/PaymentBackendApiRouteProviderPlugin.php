@@ -5,10 +5,10 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\PaymentBackendApi\Plugin\GlueApplication;
+namespace AppPayment\Glue\PaymentBackendApi\Plugin\GlueApplication;
 
-use SprykerProject\Glue\PaymentBackendApi\Controller\InitializePaymentResourceController;
-use SprykerProject\Glue\PaymentBackendApi\Controller\WebhooksController;
+use AppPayment\Glue\PaymentBackendApi\Controller\InitializePaymentResourceController;
+use AppPayment\Glue\PaymentBackendApi\Controller\WebhooksController;
 use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\RouteProviderPluginInterface;
 use Spryker\Glue\Kernel\Backend\AbstractPlugin;
 use Symfony\Component\HttpFoundation\Request;

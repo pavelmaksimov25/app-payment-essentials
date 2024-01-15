@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Shared\GlueBackendApiApplicationAuthorizationConnector;
+namespace AppPayment\Shared\GlueBackendApiApplicationAuthorizationConnector;
 
 use Spryker\Shared\GlueBackendApiApplicationAuthorizationConnector\GlueBackendApiApplicationAuthorizationConnectorConfig as SprykerGlueBackendApiApplicationAuthorizationConnectorConfig;
 

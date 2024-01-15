@@ -5,9 +5,9 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Glue\GlueBackendApiApplication;
+namespace AppPayment\Glue\GlueBackendApiApplication;
 
-use SprykerProject\Glue\PaymentBackendApi\Plugin\GlueApplication\PaymentBackendApiRouteProviderPlugin;
+use AppPayment\Glue\PaymentBackendApi\Plugin\GlueApplication\PaymentBackendApiRouteProviderPlugin;
 use Spryker\Glue\AppKernel\Plugin\RouteProvider\AppRouteProviderPlugin;
 use Spryker\Glue\GlueBackendApiApplication\GlueBackendApiApplicationDependencyProvider as SprykerGlueBackendApiApplicationDependencyProvider;
 use Spryker\Glue\GlueBackendApiApplication\Plugin\GlueApplication\ApplicationIdentifierRequestBuilderPlugin;

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProjectTest\AsyncApi\Payment\PaymentTests\PaymentEvents;
+namespace AppPaymentTest\AsyncApi\Payment\PaymentTests\PaymentEvents;
 
 use Codeception\Stub;
 use Codeception\Test\Unit;
@@ -14,14 +14,14 @@ use Generated\Shared\Transfer\WebhookResponseTransfer;
 use SprykerProject\Zed\Payment\Business\Payment\Status\PaymentStatusEnum;
 use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 use SprykerProject\Zed\Payment\PaymentDependencyProvider;
-use SprykerProjectTest\AsyncApi\Payment\PaymentAsyncApiTester;
+use AppPaymentTest\AsyncApi\Payment\PaymentAsyncApiTester;
 use Ramsey\Uuid\Uuid;
 use SprykerTest\Shared\Testify\Helper\DependencyHelperTrait;
 
 /**
  * Auto-generated group annotations
  *
- * @group SprykerProjectTest
+ * @group AppPaymentTest
  * @group AsyncApi
  * @group Payment
  * @group PaymentTests

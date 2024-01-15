@@ -1,4 +1,4 @@
-namespace: SprykerProjectTest\Glue\PaymentBackendApi
+namespace: AppPaymentTest\Glue\PaymentBackendApi
 
 paths:
     tests: .
@@ -20,8 +20,8 @@ suites:
         modules:
             enabled:
                 - Asserts
-                - \SprykerProjectTest\Glue\PaymentBackendApi\Helper\PaymentBackendApiHelper
-                - \SprykerProjectTest\Shared\Payment\Helper\PaymentHelper
+                - \AppPaymentTest\Glue\PaymentBackendApi\Helper\PaymentBackendApiHelper
+                - \AppPaymentTest\Shared\Payment\Helper\PaymentHelper
                 - \SprykerTest\Shared\Testify\Helper\Environment
                 -
                     \SprykerTest\Shared\Testify\Helper\LocatorHelper:
@@ -31,11 +31,11 @@ suites:
                 - \SprykerTest\Shared\Testify\Helper\ConfigHelper
                 - \SprykerTest\Glue\Testify\Helper\DependencyProviderHelper
                 - \SprykerTest\Shared\Testify\Helper\DependencyHelper
-                - \SprykerProjectTest\Glue\Testify\Helper\GlueBackendApiHelper
+                - \AppPaymentTest\Glue\Testify\Helper\GlueBackendApiHelper
                 - \SprykerTest\Glue\Testify\Helper\JsonPath
-                - \SprykerProjectTest\Zed\Payment\Helper\PaymentHelper
+                - \AppPaymentTest\Zed\Payment\Helper\PaymentHelper
                 - \SprykerTest\Zed\Testify\Helper\Business\BusinessHelper
-                - \SprykerProjectTest\Shared\AppConfig\Helper\AppConfigHelper
+                - \AppPaymentTest\Shared\AppConfig\Helper\AppConfigHelper
                 - \SprykerTest\Zed\Testify\Helper\Business\DependencyProviderHelper
                 - \SprykerTest\Zed\MessageBroker\Helper\InMemoryMessageBrokerHelper
                 - \SprykerTest\Shared\Propel\Helper\TransactionHelper

@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment\Business;
+namespace AppPayment\Zed\Payment\Business;
 
 use Generated\Shared\Transfer\AppConfigTransfer;
 use Generated\Shared\Transfer\AppDisconnectTransfer;

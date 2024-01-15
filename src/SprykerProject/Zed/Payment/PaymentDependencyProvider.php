@@ -5,14 +5,14 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace SprykerProject\Zed\Payment;
+namespace AppPayment\Zed\Payment;
 
-use SprykerProject\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
+use AppPayment\Zed\Payment\Dependency\Plugin\PlatformPluginInterface;
 use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 
 /**
- * @method \SprykerProject\Zed\Payment\PaymentConfig getConfig()
+ * @method \AppPayment\Zed\Payment\PaymentConfig getConfig()
  */
 class PaymentDependencyProvider extends AbstractBundleDependencyProvider
 {
