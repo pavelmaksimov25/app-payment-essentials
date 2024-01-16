@@ -52,7 +52,7 @@
         "psr-4": {
             "Generated\\": "src/Generated/",
             "Orm\\": "src/Orm/",
-            "SprykerProject\\": "src/AppPayment/",
+            "AppPayment\\": "src/AppPayment/",
             "AppPaymentTest\\AsyncApi\\Payment\\Helper\\": "tests/SprykerProjectTest/AsyncApi/Payment/_support/Helper/",
             "AppPaymentTest\\Glue\\AppConfig\\Helper\\": "tests/SprykerProjectTest/Glue/AppConfig/_support/Helper/",
             "AppPaymentTest\\Glue\\PaymentBackendApi\\Helper\\": "tests/SprykerProjectTest/Glue/PaymentBackendApi/_support/Helper/",
