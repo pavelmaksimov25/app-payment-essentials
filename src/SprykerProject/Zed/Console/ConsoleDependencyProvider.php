@@ -7,10 +7,11 @@
 
 namespace AppPayment\Zed\Console;
 
+use AppCore\Zed\Console\ConsoleDependencyProvider as AppCoreConsoleDependencyProvider;
+use AppCore\Zed\MessageBroker\Communication\Plugin\Console\MessageBrokerWorkerConsole as CoreMessageBrokerWorkerConsole;
 use AppPayment\Zed\MessageBroker\Communication\Plugin\Console\MessageBrokerWorkerConsole;
 use SecurityChecker\Command\SecurityCheckerCommand;
 use Spryker\Zed\Cache\Communication\Console\EmptyAllCachesConsole;
-use Spryker\Zed\Console\ConsoleDependencyProvider as SprykerConsoleDependencyProvider;
 use Spryker\Zed\DataImport\Communication\Console\DataImportConsole;
 use Spryker\Zed\Development\Communication\Console\CodeStyleSnifferConsole;
 use Spryker\Zed\Development\Communication\Console\GenerateClientIdeAutoCompletionConsole;
@@ -53,53 +54,49 @@ use Spryker\Zed\Translator\Communication\Console\CleanTranslationCacheConsole;
 use Spryker\Zed\Translator\Communication\Console\GenerateTranslationCacheConsole;
 use Spryker\Zed\Twig\Communication\Plugin\Application\TwigApplicationPlugin;
 
-/**
- * @method \AppPayment\Zed\Console\ConsoleConfig getConfig()
- */
-class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
+class ConsoleDependencyProvider extends AppCoreConsoleDependencyProvider
 {
-    /**
-     * @var string
-     */
-    protected const COMMAND_SEPARATOR = ':';
-
     /**
      * @return array<\Symfony\Component\Console\Command\Command>
      */
     protected function getConsoleCommands(Container $container): array
     {
-        $commands = [
-            new TransferGeneratorConsole(),
-            new RemoveTransferConsole(),
-            new EntityTransferGeneratorConsole(),
-            new RemoveEntityTransferConsole(),
+        $commands = array_merge(
+            parent::getConsoleCommands($container),
+            [
+                new TransferGeneratorConsole(),
+                new RemoveTransferConsole(),
+                new EntityTransferGeneratorConsole(),
+                new RemoveEntityTransferConsole(),
 
-            new EmptyAllCachesConsole(),
+                new EmptyAllCachesConsole(),
 
-            // Setup commands
-            new DeployPreparePropelConsole(),
+                // Setup commands
+                new DeployPreparePropelConsole(),
 
-            new DatabaseDropConsole(),
-            new DatabaseDropTablesConsole(),
-            new DeleteMigrationFilesConsole(),
+                new DatabaseDropConsole(),
+                new DatabaseDropTablesConsole(),
+                new DeleteMigrationFilesConsole(),
 
-            new SchedulerSetupConsole(),
-            new SchedulerCleanConsole(),
-            new SchedulerSuspendConsole(),
-            new SchedulerResumeConsole(),
+                new SchedulerSetupConsole(),
+                new SchedulerCleanConsole(),
+                new SchedulerSuspendConsole(),
+                new SchedulerResumeConsole(),
 
-            new DeleteLogFilesConsole(),
+                new DeleteLogFilesConsole(),
 
-            new ResolvableClassCacheConsole(),
-            new RouterDebugBackofficeConsole(),
-            new BackofficeRouterCacheWarmUpConsole(),
-            new MessageBrokerWorkerConsole(),
+                new ResolvableClassCacheConsole(),
+                new CoreMessageBrokerWorkerConsole(),
 
-            new DataImportConsole(),
+                new DataImportConsole(),
+                new ResolvableClassCacheConsole(),
+                new RouterDebugBackofficeConsole(),
+                new BackofficeRouterCacheWarmUpConsole(),
 
-            new CleanTranslationCacheConsole(),
-            new GenerateTranslationCacheConsole(),
-        ];
+
+                new CleanTranslationCacheConsole(),
+                new GenerateTranslationCacheConsole(),
+        ]);
 
         $propelCommands = $container->getLocator()->propel()->facade()->getConsoleCommands();
         $commands = array_merge($commands, $propelCommands);

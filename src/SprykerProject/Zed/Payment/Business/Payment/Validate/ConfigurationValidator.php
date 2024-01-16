@@ -68,7 +68,7 @@ class ConfigurationValidator
             (new GlueErrorTransfer())
                 ->setStatus(Response::HTTP_UNPROCESSABLE_ENTITY)
                 ->setCode('443')
-                ->setMessage(implode(', ', $messages)), // json-encoded messages grouped by properties are not displayed :(
+                ->setMessage(implode(', ', $messages)) // json-encoded messages grouped by properties are not displayed :(
         );
 
         return $glueRequestValidationTransfer;

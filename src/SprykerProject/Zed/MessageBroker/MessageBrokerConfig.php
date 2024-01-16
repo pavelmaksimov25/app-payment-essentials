@@ -21,21 +21,4 @@ class MessageBrokerConfig extends SprykerMessageBrokerConfig
             'payment-commands',
         ];
     }
-
-    public function isMb2Enabled(): bool
-    {
-        // this is needed to understand if MB2 is enabled on current env
-        return $this->getConfig()->hasKey(MessageBrokerAwsConstants::HTTP_CHANNEL_SENDER_BASE_URL) && $this->get(MessageBrokerAwsConstants::HTTP_CHANNEL_SENDER_BASE_URL)
-            && $this->getConfig()->hasKey(MessageBrokerAwsConstants::HTTP_CHANNEL_RECEIVER_BASE_URL) && $this->get(MessageBrokerAwsConstants::HTTP_CHANNEL_RECEIVER_BASE_URL, '');
-    }
-
-    public function isMb1Enabled(): bool
-    {
-        // this is needed to understand if MB1 is enabled on current env
-        return $this->getConfig()->hasKey(MessageBrokerAwsConstants::SQS_RECEIVER_CONFIG) && $this->get(MessageBrokerAwsConstants::SQS_RECEIVER_CONFIG)
-            && (
-                ($this->getConfig()->hasKey(MessageBrokerAwsConstants::HTTP_SENDER_CONFIG) && $this->get(MessageBrokerAwsConstants::HTTP_SENDER_CONFIG))
-                || ($this->getConfig()->hasKey(MessageBrokerAwsConstants::SNS_SENDER_CONFIG) && $this->get(MessageBrokerAwsConstants::SNS_SENDER_CONFIG))
-            );
-    }
 }
