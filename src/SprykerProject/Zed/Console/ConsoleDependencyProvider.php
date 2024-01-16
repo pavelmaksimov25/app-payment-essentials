@@ -61,45 +61,40 @@ class ConsoleDependencyProvider extends AppCoreConsoleDependencyProvider
      */
     protected function getConsoleCommands(Container $container): array
     {
-        $commands = array_merge(
-            parent::getConsoleCommands($container),
-            [
-                new TransferGeneratorConsole(),
-                new RemoveTransferConsole(),
-                new EntityTransferGeneratorConsole(),
-                new RemoveEntityTransferConsole(),
+        $commands = array_merge(parent::getConsoleCommands($container), [
+            new TransferGeneratorConsole(),
+            new RemoveTransferConsole(),
+            new EntityTransferGeneratorConsole(),
+            new RemoveEntityTransferConsole(),
 
-                new EmptyAllCachesConsole(),
+            new EmptyAllCachesConsole(),
 
-                // Setup commands
-                new DeployPreparePropelConsole(),
+            // Setup commands
+            new DeployPreparePropelConsole(),
 
-                new DatabaseDropConsole(),
-                new DatabaseDropTablesConsole(),
-                new DeleteMigrationFilesConsole(),
+            new DatabaseDropConsole(),
+            new DatabaseDropTablesConsole(),
+            new DeleteMigrationFilesConsole(),
 
-                new SchedulerSetupConsole(),
-                new SchedulerCleanConsole(),
-                new SchedulerSuspendConsole(),
-                new SchedulerResumeConsole(),
+            new SchedulerSetupConsole(),
+            new SchedulerCleanConsole(),
+            new SchedulerSuspendConsole(),
+            new SchedulerResumeConsole(),
 
-                new DeleteLogFilesConsole(),
+            new DeleteLogFilesConsole(),
 
-                new ResolvableClassCacheConsole(),
-                new CoreMessageBrokerWorkerConsole(),
+            new ResolvableClassCacheConsole(),
+            new CoreMessageBrokerWorkerConsole(),
 
-                new DataImportConsole(),
-                new ResolvableClassCacheConsole(),
-                new RouterDebugBackofficeConsole(),
-                new BackofficeRouterCacheWarmUpConsole(),
+            new DataImportConsole(),
+            new ResolvableClassCacheConsole(),
+            new RouterDebugBackofficeConsole(),
+            new BackofficeRouterCacheWarmUpConsole(),
 
 
-                new CleanTranslationCacheConsole(),
-                new GenerateTranslationCacheConsole(),
-        ]);
-
-        $propelCommands = $container->getLocator()->propel()->facade()->getConsoleCommands();
-        $commands = array_merge($commands, $propelCommands);
+            new CleanTranslationCacheConsole(),
+            new GenerateTranslationCacheConsole(),
+        ], $container->getLocator()->propel()->facade()->getConsoleCommands());
 
         if ($this->getConfig()->isDevelopmentConsoleCommandsEnabled()) {
             $commands[] = new CodeStyleSnifferConsole();
