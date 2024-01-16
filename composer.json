@@ -16,7 +16,6 @@
         "spryker/session-file": "^1.5",
         "spryker/money": "^2.12",
         "spryker/translator": "^1.11",
-        "spryker/app-kernel": "dev-feature/without-encryption as 0.1.1",
         "spryker/secrets-manager-aws": "^1.0",
         "spryker/oauth-client": "^1.4.0",
         "spryker/oauth-auth0": "^1.0.0",

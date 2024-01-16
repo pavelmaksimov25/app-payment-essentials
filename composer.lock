@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9cf96945122355fc5fbc74f048b38b8",
+    "content-hash": "e6207c6e6c680a07b20472f9432196a9",
     "packages": [
         {
             "name": "async-aws/core",
@@ -396,16 +396,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +467,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
             },
             "funding": [
                 {
@@ -483,7 +483,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-16T13:40:37+00:00"
+            "time": "2024-01-15T18:05:13+00:00"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -3302,16 +3302,16 @@
         },
         {
             "name": "spryker/app-kernel",
-            "version": "dev-feature/without-encryption",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/app-kernel.git",
-                "reference": "031cea2404a910f2bcc701f1fd90038a25dc71c6"
+                "reference": "06f320a1aa032607136d12edeb0c3519fc18880f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/app-kernel/zipball/031cea2404a910f2bcc701f1fd90038a25dc71c6",
-                "reference": "031cea2404a910f2bcc701f1fd90038a25dc71c6",
+                "url": "https://api.github.com/repos/spryker/app-kernel/zipball/06f320a1aa032607136d12edeb0c3519fc18880f",
+                "reference": "06f320a1aa032607136d12edeb0c3519fc18880f",
                 "shasum": ""
             },
             "require": {
@@ -3359,9 +3359,9 @@
             "description": "AppKernel module",
             "support": {
                 "issues": "https://github.com/spryker/app-kernel/issues",
-                "source": "https://github.com/spryker/app-kernel/tree/feature/without-encryption"
+                "source": "https://github.com/spryker/app-kernel/tree/0.1.1"
             },
-            "time": "2024-01-09T08:00:39+00:00"
+            "time": "2024-01-09T09:01:05+00:00"
         },
         {
             "name": "spryker/app-kernel-extension",
@@ -18345,16 +18345,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.19.0",
+            "version": "0.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "503f4ead06b3892bd106f67f3c86d4e36c94423d"
+                "reference": "2bba0dd55ba92c23f1253d9e60d0242a896d1025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/503f4ead06b3892bd106f67f3c86d4e36c94423d",
-                "reference": "503f4ead06b3892bd106f67f3c86d4e36c94423d",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/2bba0dd55ba92c23f1253d9e60d0242a896d1025",
+                "reference": "2bba0dd55ba92c23f1253d9e60d0242a896d1025",
                 "shasum": ""
             },
             "require": {
@@ -18389,7 +18389,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.19.0"
+                "source": "https://github.com/rectorphp/rector/tree/0.19.1"
             },
             "funding": [
                 {
@@ -18397,7 +18397,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-09T00:49:06+00:00"
+            "time": "2024-01-15T18:02:43+00:00"
         },
         {
             "name": "sanmai/later",
@@ -20907,17 +20907,10 @@
             "version": "dev-feature/resolve-remote-references",
             "alias": "0.3.1",
             "alias_normalized": "0.3.1.0"
-        },
-        {
-            "package": "spryker/app-kernel",
-            "version": "dev-feature/without-encryption",
-            "alias": "0.1.1",
-            "alias_normalized": "0.1.1.0"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "spryker/app-kernel": 20,
         "pavelmaksimov25/app-core-essentials": 20,
         "spryker-sdk/async-api": 20
     },
